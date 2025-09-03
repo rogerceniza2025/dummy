@@ -1,5 +1,16 @@
 import Image from "next/image";
 
+/**
+ * Default homepage component for the app.
+ *
+ * Renders a centered, presentational homepage UI containing the Next.js logo, a short two-item instruction list,
+ * two call-to-action buttons (Deploy now and Read our docs), and a footer with three external resource links.
+ *
+ * The component is static (no state or hooks). External links open in a new tab with appropriate `rel` attributes,
+ * and decorative footer icons are marked `aria-hidden`.
+ *
+ * @returns The homepage JSX element.
+ */
 export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">

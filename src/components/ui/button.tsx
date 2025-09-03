@@ -35,6 +35,17 @@ const buttonVariants = cva(
   }
 )
 
+/**
+ * Renders a themeable Button element with variant and size-driven styles.
+ *
+ * Renders either a native <button> or a Radix <Slot> (when `asChild` is true), applies classes produced by `buttonVariants`
+ * (merged with any `className`), forwards all other props to the underlying element, and sets `data-slot="button"`.
+ *
+ * @param variant - Visual variant to apply; one of: `default`, `destructive`, `outline`, `secondary`, `ghost`, `link`.
+ * @param size - Size variant to apply; one of: `default`, `sm`, `lg`, `icon`.
+ * @param asChild - When true, renders a Radix `Slot` so the consumer can provide the actual element; defaults to `false`.
+ * @returns The rendered button or Slot element with computed styles and forwarded props.
+ */
 function Button({
   className,
   variant,
